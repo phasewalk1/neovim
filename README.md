@@ -7,6 +7,10 @@
     - etc ...
 - Custom dashboard using [dashboard.nvim](https://github.com/nvimdev/dashboard-nvim).
 
+### _oxocarbon_
+[nyoom-engineering](https://github.com/nyoom-engineering)'s [oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim) theme:
+<img src="fig/theme.png">
+
 ### Dashboard
 
 <img src="fig/dash.png"/>
@@ -20,6 +24,5 @@ The dashboard has a surprise in there, but I'm going to spoil it anyway:
 
 Of course, there a more useful hotkeys in the dashboard as well. `u` for updating packages with [Lazy](https://github.com/folke/lazy.nvim), `ff` for `Telescope find_files`, and `mg` for `Telescope live_grep`.
 
-### _oxocarbon_
-Wouldn't be complete without [nyoom-engineering](https://github.com/nyoom-engineering)'s [oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim) theme:
-<img src="fig/theme.png">
+<img src="fig/tele.png">
+
