@@ -1,9 +1,15 @@
+local function open_nvim_tree()
+  require('nvim-tree-api').tree.open()
+end
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
+
 local options = {
   filters = {
     dotfiles = false,
     exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
   },
-  disable_netrw = true,
+  disable_netrw = false,
   hijack_netrw = true,
   hijack_cursor = true,
   hijack_unnamed_buffer_when_opening = false,
@@ -31,7 +37,7 @@ local options = {
     },
   },
   renderer = {
-    root_folder_label = false,
+    root_folder_label = true,
     highlight_git = false,
     highlight_opened_files = "none",
 

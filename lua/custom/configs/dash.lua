@@ -21,7 +21,9 @@ local opts = {
     '',
     },
     shortcut = {
-      { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
+      { desc = '󰲽 Profile', group = '@property', action = 'Lazy profile', key = 'pf' },
+      { desc = '󰊳 Update', group = 'Label', action = 'Lazy update', key = 'up' },
+      { desc = '󰏔 Dependencies', group = '@property', action = 'Mason', key = 'ma' },
       {
         icon = ' ',
         desc = 'Files',
@@ -35,9 +37,9 @@ local opts = {
         key = 'mg',
       },
       {
-        desc = ' Surprise!',
+        desc = '󱍊 Surprise!',
         action = 'Telescope planets show_moon=true, show_pluto=true',
-        key = 'p',
+        key = 'pl',
       },
     },
     footer = {
