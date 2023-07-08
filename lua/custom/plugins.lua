@@ -1,4 +1,29 @@
 local plugins = {
+  -- NvChad CONFIG OVERRIDES!
+  {
+    'neovim/nvim-lspconfig',
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
+    end,
+  },
+  {
+    'nvim-treesitter/nvim-treesitter',
+    opts = {
+      ensure_installed = {
+        'lua',
+        'html',
+        'css',
+        'typescript',
+        'json',
+        'c',
+        'rust',
+        'python',
+        'go',
+      }
+    }
+  },
+  -- Custom Plugins
   {
     'glepnir/dashboard-nvim',
     event = 'VimEnter',
@@ -19,16 +44,9 @@ local plugins = {
     },
   },
   {
-    'neovim/nvim-lspconfig',
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
-    end,
-  },
-  {
     'github/copilot.vim',
     lazy = false,
-  }
+  },
 }
 
 return plugins
